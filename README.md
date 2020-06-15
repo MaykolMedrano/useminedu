@@ -1,4 +1,3 @@
-# useminedu
 # `useminedu` : Modulo para descargar datos de  ESCALE (Ministerio de Educación) en Stata - Perú.
 
 ## Descripción
