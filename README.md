@@ -22,6 +22,29 @@ Seleccione un módulo de interés y año:
  useminedu censo, modulo(34) año(2018)
 ```
 
+Si desea descargar más de un módulo
+
+```stata
+foreach i in 01 02 03 04 {
+useminedu censo, modulo(`i') año(2019)
+}
+```
+
+Si desea descargar más de un año y un módulo de interés
+
+```stata
+forvalues j in 2017/2019 {
+useminedu censo, modulo(01) año(`j')
+}
+```
+Si desea descargar más de un módulo y de diferentes años.
+
+```stata
+foreach i in 01 02 03 04 {
+forvalues j in 2017/2019 {
+useminedu censo, modulo(`i') año(`j')
+}
+```
 ## Nota
 
 Es necesario crear previamente un folder para descargar los datos.
