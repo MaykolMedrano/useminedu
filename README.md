@@ -6,6 +6,8 @@ El presente modulo descarga, descomprime y transforma lo datos (Censo Educativo)
 
 ## Instalación
 
+Copie el siguiente codigo en Stata y ejecute.
+
 ```
 cap ado uninstall useminedu 
 net install useminedu, from(https://github.com/MaykolMedrano/enahodata/raw/master/source/)
