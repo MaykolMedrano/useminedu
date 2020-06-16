@@ -10,7 +10,7 @@ Copie el siguiente codigo en Stata y ejecute.
 
 ```
 cap ado uninstall useminedu 
-net install useminedu, from(https://github.com/MaykolMedrano/enahodata/raw/master/source/)
+net install useminedu, from(https://github.com/MaykolMedrano/useminedu/raw/master/source/)
 ```
 
 ## Uso
