@@ -1,0 +1,10 @@
+v 1
+d Maykol Medrano, Ministerio de Educación (maykolmedrano35@gmail.com)
+p useminedu USEMINEDU- Modulo para descargar datos de ESCALE (Ministerio de Educación) en Stata - Perú
+
+* l word-to-show path-or-url [description]
+* t: Directories within site:
+* t path [description]
+* Packages:
+* p pkgname [description]
+
