@@ -1,0 +1,15 @@
+v 1
+
+d useminedu Modulo para descargar datos de ESCALE (Ministerio de Educación) en Stata
+d
+d Author: Maykol Medrano.
+d
+d KW: data
+d KW: minedu
+d KW: censo
+d
+d Requires: Stata version 15 and Windows 10
+d
+d Distribution-Date: 2020
+f useminedu.ado
+f useminedu.sthlp
