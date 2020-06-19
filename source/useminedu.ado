@@ -4,9 +4,6 @@
 *! Ministry of Education
 *! maykolmedrano35@gmail.com
 
-global main "E:\GitHub\useminedu\prueba"
-cd "${main}"
-
 capture program drop useminedu
 program define useminedu
 	vers 15.0
