@@ -202,8 +202,8 @@ di in green "Descargando modulo_`modulo'_`year'"
 di in green "Descarga exitosa"
 id_02+Matricula_01
 sleep 2000
-qui unzipfile id_`modulo'
-erase "id_`modulo'"
+qui unzipfile id_`modulo'.zip
+erase "id_`modulo'".zip
 
 di in green "Convirtiendo .dbf en .dta"
 
