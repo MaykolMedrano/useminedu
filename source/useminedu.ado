@@ -204,7 +204,7 @@ di in green "Descarga exitosa"
 sleep 2000
 
 qui unzipfile "id_`modulo'"
-erase "id_`modulo'.zip"
+erase "id_`modulo'"
 
 di in green "Convirtiendo .dbf en .dta"
 
