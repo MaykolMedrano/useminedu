@@ -67,12 +67,12 @@ if length(`"`modulo'"') != 0 {
 		loc mod 02
 	}
 	else if "`modulo'"=="03" {
-	loc "modulo03+Matricula_02"
+	loc modulo "modulo03+Matricula_02"
 		loc mod 03
 	}
 	else if "`modulo'"=="04"{
 	loc modulo "04+Matricula_03"
-	l	loc mod 04
+		loc mod 04
 	}
 	else if "`modulo'"=="05"{
 	loc modulo "05+Matricula_04"
@@ -92,7 +92,7 @@ if length(`"`modulo'"') != 0 {
 	}
 	else if "`modulo'"=="09"{
 	loc modulo "09+Docentes_04"
-	loc mod 09
+		loc mod 09
 	}
 	else if "`modulo'"=="10"{
 	loc modulo "10+Secciones"
@@ -192,21 +192,21 @@ if length(`"`modulo'"') != 0 {
 	}
 	else if "`modulo'"=="34"{
 	loc modulo "34+loc_Pronoei"
-	loc mod 34
+		loc mod 34
 	}
 	
 ********************************************************************************
 *** Remplazamos los valores de sintaxis
 ********************************************************************************
 //Usamos el comando nativo copy para descargar los datos
-copy "http://escale.minedu.gob.pe/documents/10156/`año'/`modulo'.zip" id_`modulo'.zip
+copy "http://escale.minedu.gob.pe/documents/10156/`año'/`modulo'.zip" .
 
 di in green "Descargando modulo_`modulo'_`year'"
 di in green "Descarga exitosa"
 
 sleep 2000
-qui unzipfile id_`modulo'.zip
-erase "id_`modulo'.zip"
+qui unzipfile id_`modulo'
+erase "id_`modulo'"
 
 di in green "Convirtiendo .dbf en .dta"
 
@@ -229,4 +229,5 @@ foreach file of loc dbfiles {
 di in green "{text}Consulte por más datos aquí:{browse www.escale.minedu.gob.pe:ESCALE - Ministerio de Educación}"
 	
 end
+
 
