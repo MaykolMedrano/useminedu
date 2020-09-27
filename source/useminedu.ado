@@ -4,6 +4,9 @@
 *! Ministry of Education
 *! maykolmedrano35@gmail.com
 
+global main "E:\GitHub\useminedu\prueba"
+cd "${main}"
+
 capture program drop useminedu
 program define useminedu
 	vers 15.0
@@ -29,12 +32,12 @@ clear
 
 
 if length(`"`place'"') != 0 {
-		local place `place'
+		loc place `place'
 
 }
 
 if length(`"`modulo'"') != 0 {
-		local id_modulo `id_modulo'
+		loc id_modulo `id_modulo'
 }		
 
 ********************************************************************************
@@ -43,153 +46,153 @@ if length(`"`modulo'"') != 0 {
 	// Intercambiamos el codigo por el año de los censos 
 
 	if "`año'"=="2019" {
-		local año 5336482
-		local year 2019
+		loc año 5336482
+		loc year 2019
 	}
 	else if "`año'"=="2018" {
-		local año 4594303
-		local year 2018
+		loc año 4594303
+		loc year 2018
 	}
+
 	else if "`año'"=="2017" {
-		local año 4028089
-		local year 2017
+		loc año 4028089
+		loc year 2017
 	}
-	
 	if "`modulo'"=="01"{
-	local modulo "01+Padron.zip" | modulo "18+Padron.zip"
-		local mod 01
+	loc modulo "01+Padron.zip" | modulo "18+Padron.zip"
+		loc mod 01
 	}
 	else if "`modulo'"=="02" {
-	local modulo "02+Matricula_01.zip"
-		local mod 02
+	loc modulo "02+Matricula_01.zip"
+		loc mod 02
 	}
 	else if "`modulo'"=="03" {
-	local "modulo03+Matricula_02.zip"
-		local mod 03
+	loc "modulo03+Matricula_02.zip"
+		loc mod 03
 	}
 	else if "`modulo'"=="04"{
-	local modulo "04+Matricula_03.zip"
-	l	local mod 04
+	loc modulo "04+Matricula_03.zip"
+	l	loc mod 04
 	}
 	else if "`modulo'"=="05"{
-	local modulo "05+Matricula_04.zip"
-		local mod 05
+	loc modulo "05+Matricula_04.zip"
+		loc mod 05
 	}
 	else if "`modulo'"=="06"{
-	local modulo "06+Docentes_01.zip"
-		local mod 06
+	loc modulo "06+Docentes_01.zip"
+		loc mod 06
 	}
 	else if "`modulo'"=="07"{
-	local modulo "07+Docentes_02.zip"
-		local mod 07
+	loc modulo "07+Docentes_02.zip"
+		loc mod 07
 	}
 	else if "`modulo'"=="08"{
-	local modulo "08+Docentes_03.zip"
-		local mod 08
+	loc modulo "08+Docentes_03.zip"
+		loc mod 08
 	}
 	else if "`modulo'"=="09"{
-	local modulo "09+Docentes_04.zip"
-	local mod 09
+	loc modulo "09+Docentes_04.zip"
+	loc mod 09
 	}
 	else if "`modulo'"=="10"{
-	local modulo "10+Secciones.zip"
-		local mod 10
+	loc modulo "10+Secciones.zip"
+		loc mod 10
 	}
 	else if "`modulo'"=="11"{
-	local modulo "11+Multiedad.zip"
-		local mod 11
+	loc modulo "11+Multiedad.zip"
+		loc mod 11
 	}
 	else if "`modulo'"=="12"{
-	local modulo "12+Recursos.zip"
-		local mod 12
+	loc modulo "12+Recursos.zip"
+		loc mod 12
 	}
 	else if "`modulo'"=="13"{
-	local modulo "13+Otras_caracteristicas_S100.zip"
-		local mod 13
+	loc modulo "13+Otras_caracteristicas_S100.zip"
+		loc mod 13
 	}
 	else if "`modulo'"=="14"{
-	local modulo "14+Modelo_servicio.zip"
-		local mod 14
+	loc modulo "14+Modelo_servicio.zip"
+		loc mod 14
 	}
 	else if "`modulo'"=="15"{
-	local modulo "15+C3as_cuadro805.zip"
-		local mod 15
+	loc modulo "15+C3as_cuadro805.zip"
+		loc mod 15
 	}
 	else if "`modulo'"=="16"{
-	local modulo "16+Tabgence_01.zip"
-		local mod 16
+	loc modulo "16+Tabgence_01.zip"
+		loc mod 16
 	}
 	else if "`modulo'"=="17"{
-	local modulo "17+Tabgence_02.zip"
-		local mod 17
+	loc modulo "17+Tabgence_02.zip"
+		loc mod 17
 	}
 	else if "`modulo'"=="18"{
-	local modulo "18+Horarios.zip"
-		local mod 18
+	loc modulo "18+Horarios.zip"
+		loc mod 18
 	}
 	else if "`modulo'"=="19"{
-	local modulo "19+Porcentaje_Region.zip"
-		local mod 19
+	loc modulo "19+Porcentaje_Region.zip"
+		loc mod 19
 	}
 	else if "`modulo'"=="20"{
-	local modulo "20+Periodos_eba.zip"
-		local mod 20
+	loc modulo "20+Periodos_eba.zip"
+		loc mod 20
 	}
 	else if "`modulo'"=="21"{
-	local modulo "21+Saanee.zip"
-		local mod 21
+	loc modulo "21+Saanee.zip"
+		loc mod 21
 	}
 	else if "`modulo'"=="22"{
-	local modulo "22+Carreras_autorizadas.zip"
-		local mod 22
+	loc modulo "22+Carreras_autorizadas.zip"
+		loc mod 22
 	}
 	else if "`modulo'"=="23"{
-	local modulo "23+Local_Lineal.zip"
-		local mod 23
+	loc modulo "23+loc_Lineal.zip"
+		loc mod 23
 	}
 	else if "`modulo'"=="24"{
-	local modulo "24+Local_Sec112.zip"
-		local mod 24
+	loc modulo "24+loc_Sec112.zip"
+		loc mod 24
 	}
 	else if "`modulo'"=="25"{
-	local modulo "25+Local_Sec206.zip"
-		local mod 25
+	loc modulo "25+loc_Sec206.zip"
+		loc mod 25
 	}
 	else if "`modulo'"=="26"{
-	local modulo "26+Local_Sec207.zip"
-		local mod 26
+	loc modulo "26+loc_Sec207.zip"
+		loc mod 26
 	}
 	else if "`modulo'"=="27"{
-	local modulo "27+Local_Sec300.zip"
-		local mod 27
+	loc modulo "27+loc_Sec300.zip"
+		loc mod 27
 	}
 	else if "`modulo'"=="28"{
-	local modulo "28+Local_Sec400.zip"
-		local mod 28
+	loc modulo "28+loc_Sec400.zip"
+		loc mod 28
 	}
 	else if "`modulo'"=="29"{
-	local modulo "29+Local_Sec405.zip"
-		local mod 29
+	loc modulo "29+loc_Sec405.zip"
+		loc mod 29
 	}
 	else if "`modulo'"=="30"{
-	local modulo "30+Local_Sec500.zip"
-		local mod 30
+	loc modulo "30+loc_Sec500.zip"
+		loc mod 30
 	}
 	else if "`modulo'"=="31"{
-	local modulo "31+Local_Sec611.zip"
-		local mod 31
+	loc modulo "31+loc_Sec611.zip"
+		loc mod 31
 	}
 	else if "`modulo'"=="32"{
-	local modulo "32+Local_Sec700.zip"
-		local mod 32
+	loc modulo "32+loc_Sec700.zip"
+		loc mod 32
 	}
 	else if "`modulo'"=="33"{
-	local modulo "33+Local_Sec800.zip"
-		local mod 33
+	loc modulo "33+loc_Sec800.zip"
+		loc mod 33
 	}
 	else if "`modulo'"=="34"{
-	local modulo "34+Local_Pronoei.zip"
-	local mod 34
+	loc modulo "34+loc_Pronoei.zip"
+	loc mod 34
 	}
 	
 ********************************************************************************
@@ -205,17 +208,21 @@ sleep 2000
 qui unzipfile id_`modulo'.zip
 erase "id_`modulo'.zip"
 
-di in green "Convirtiendo .dbf en dta."
+di in green "Convirtiendo .dbf en .dta"
 
-local filelist: dir . files "*.dbf"
-foreach file of local filelist {
+loc filelist: dir . files "*.dbf"
+foreach file of loc filelist {
 	import dbase using "`file'", clear case(lower)
 	sleep 1000
-	qui save "`file'_`year'.dta", replace
+	qui gen stub = "`file'" in 1
+	qui split stub , p(.)
+	loc filename = stub1 [`n']
+	qui save "`filename'_`year'.dta", replace
+	drop stub*
 }
 
-local dbfiles: dir . files "*.dbf"
-foreach file of local dbfiles {
+loc dbfiles: dir . files "*.dbf"
+foreach file of loc dbfiles {
 	qui erase "`file'" 
 }
 
