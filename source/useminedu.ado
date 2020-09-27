@@ -56,7 +56,7 @@ if length(`"`modulo'"') != 0 {
 	}
 	
 	if "`modulo'"=="01"{
-	local modulo "01+Padron.zip"
+	local modulo "01+Padron.zip" | modulo "18+Padron.zip"
 		local mod 01
 	}
 	else if "`modulo'"=="02" {
