@@ -196,7 +196,7 @@ if length(`"`modulo'"') != 0 {
 *** Remplazamos los valores de sintaxis
 ********************************************************************************
 //Usamos el comando nativo copy para descargar los datos
-copy "http://escale.minedu.gob.pe/documents/10156/`año'/`modulo'" .
+copy "http://escale.minedu.gob.pe/documents/10156/`año'/`modulo'" "`modulo'.zip"
 
 di in green "Descargando modulo_`modulo'_`year'"
 di in green "Descarga exitosa"
