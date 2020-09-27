@@ -56,139 +56,139 @@ if length(`"`modulo'"') != 0 {
 		loc year 2017
 	}
 	if "`modulo'"=="01"{
-	loc modulo "01+Padron"
+	loc modulo "01+Padron.zip"
 		loc mod 01
 	}
 	else if "`modulo'"=="02" {
-	loc modulo "02+Matricula_01"
+	loc modulo "02+Matricula_01.zip"
 		loc mod 02
 	}
 	else if "`modulo'"=="03" {
-	loc modulo "modulo03+Matricula_02"
+	loc modulo "modulo03+Matricula_02.zip"
 		loc mod 03
 	}
 	else if "`modulo'"=="04"{
-	loc modulo "04+Matricula_03"
+	loc modulo "04+Matricula_03.zip"
 		loc mod 04
 	}
 	else if "`modulo'"=="05"{
-	loc modulo "05+Matricula_04"
+	loc modulo "05+Matricula_04.zip"
 		loc mod 05
 	}
 	else if "`modulo'"=="06"{
-	loc modulo "06+Docentes_01"
+	loc modulo "06+Docentes_01.zip"
 		loc mod 06
 	}
 	else if "`modulo'"=="07"{
-	loc modulo "07+Docentes_02"
+	loc modulo "07+Docentes_02.zip"
 		loc mod 07
 	}
 	else if "`modulo'"=="08"{
-	loc modulo "08+Docentes_03"
+	loc modulo "08+Docentes_03.zip"
 		loc mod 08
 	}
 	else if "`modulo'"=="09"{
-	loc modulo "09+Docentes_04"
+	loc modulo "09+Docentes_04.zip"
 		loc mod 09
 	}
 	else if "`modulo'"=="10"{
-	loc modulo "10+Secciones"
+	loc modulo "10+Secciones.zip"
 		loc mod 10
 	}
 	else if "`modulo'"=="11"{
-	loc modulo "11+Multiedad"
+	loc modulo "11+Multiedad.zip"
 		loc mod 11
 	}
 	else if "`modulo'"=="12"{
-	loc modulo "12+Recursos"
+	loc modulo "12+Recursos.zip"
 		loc mod 12
 	}
 	else if "`modulo'"=="13"{
-	loc modulo "13+Otras_caracteristicas_S100"
+	loc modulo "13+Otras_caracteristicas_S100.zip"
 		loc mod 13
 	}
 	else if "`modulo'"=="14"{
-	loc modulo "14+Modelo_servicio"
+	loc modulo "14+Modelo_servicio.zip"
 		loc mod 14
 	}
 	else if "`modulo'"=="15"{
-	loc modulo "15+C3as_cuadro805"
+	loc modulo "15+C3as_cuadro805.zip"
 		loc mod 15
 	}
 	else if "`modulo'"=="16"{
-	loc modulo "16+Tabgence_01"
+	loc modulo "16+Tabgence_01.zip"
 		loc mod 16
 	}
 	else if "`modulo'"=="17"{
-	loc modulo "17+Tabgence_02"
+	loc modulo "17+Tabgence_02.zip"
 		loc mod 17
 	}
 	else if "`modulo'"=="18"{
-	loc modulo "18+Horarios"
+	loc modulo "18+Horarios.zip"
 		loc mod 18
 	}
 	else if "`modulo'"=="19"{
-	loc modulo "19+Porcentaje_Region"
+	loc modulo "19+Porcentaje_Region.zip"
 		loc mod 19
 	}
 	else if "`modulo'"=="20"{
-	loc modulo "20+Periodos_eba"
+	loc modulo "20+Periodos_eba.zip"
 		loc mod 20
 	}
 	else if "`modulo'"=="21"{
-	loc modulo "21+Saanee"
+	loc modulo "21+Saanee.zip"
 		loc mod 21
 	}
 	else if "`modulo'"=="22"{
-	loc modulo "22+Carreras_autorizadas"
+	loc modulo "22+Carreras_autorizadas.zip"
 		loc mod 22
 	}
 	else if "`modulo'"=="23"{
-	loc modulo "23+loc_Lineal"
+	loc modulo "23+loc_Lineal.zip"
 		loc mod 23
 	}
 	else if "`modulo'"=="24"{
-	loc modulo "24+loc_Sec112"
+	loc modulo "24+loc_Sec112.zip"
 		loc mod 24
 	}
 	else if "`modulo'"=="25"{
-	loc modulo "25+loc_Sec206"
+	loc modulo "25+loc_Sec206.zip"
 		loc mod 25
 	}
 	else if "`modulo'"=="26"{
-	loc modulo "26+loc_Sec207"
+	loc modulo "26+loc_Sec207.zip"
 		loc mod 26
 	}
 	else if "`modulo'"=="27"{
-	loc modulo "27+loc_Sec300"
+	loc modulo "27+loc_Sec300.zip"
 		loc mod 27
 	}
 	else if "`modulo'"=="28"{
-	loc modulo "28+loc_Sec400"
+	loc modulo "28+loc_Sec400.zip"
 		loc mod 28
 	}
 	else if "`modulo'"=="29"{
-	loc modulo "29+loc_Sec405"
+	loc modulo "29+loc_Sec405.zip"
 		loc mod 29
 	}
 	else if "`modulo'"=="30"{
-	loc modulo "30+loc_Sec500"
+	loc modulo "30+loc_Sec500.zip"
 		loc mod 30
 	}
 	else if "`modulo'"=="31"{
-	loc modulo "31+loc_Sec611"
+	loc modulo "31+loc_Sec611.zip"
 		loc mod 31
 	}
 	else if "`modulo'"=="32"{
-	loc modulo "32+loc_Sec700"
+	loc modulo "32+loc_Sec700.zip"
 		loc mod 32
 	}
 	else if "`modulo'"=="33"{
-	loc modulo "33+loc_Sec800"
+	loc modulo "33+loc_Sec800.zip"
 		loc mod 33
 	}
 	else if "`modulo'"=="34"{
-	loc modulo "34+loc_Pronoei"
+	loc modulo "34+loc_Pronoei.zip"
 		loc mod 34
 	}
 	
@@ -196,13 +196,14 @@ if length(`"`modulo'"') != 0 {
 *** Remplazamos los valores de sintaxis
 ********************************************************************************
 //Usamos el comando nativo copy para descargar los datos
-copy "http://escale.minedu.gob.pe/documents/10156/`año'/`modulo'.zip" .
+copy "http://escale.minedu.gob.pe/documents/10156/`año'/`modulo'" .
 
 di in green "Descargando modulo_`modulo'_`year'"
 di in green "Descarga exitosa"
-id_02+Matricula_01
+
 sleep 2000
-qui unzipfile "id_`modulo'.zip.zip"
+
+qui unzipfile "id_`modulo'.zip"
 erase "id_`modulo'.zip"
 
 di in green "Convirtiendo .dbf en .dta"
@@ -226,3 +227,4 @@ foreach file of loc dbfiles {
 di in green "{text}Consulte por más datos aquí:{browse www.escale.minedu.gob.pe:ESCALE - Ministerio de Educación}"
 	
 end
+
