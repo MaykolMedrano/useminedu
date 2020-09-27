@@ -226,7 +226,3 @@ foreach file of loc dbfiles {
 di in green "{text}Consulte por más datos aquí:{browse www.escale.minedu.gob.pe:ESCALE - Ministerio de Educación}"
 	
 end
-
-
-
-
