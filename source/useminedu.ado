@@ -59,7 +59,7 @@ if length(`"`modulo'"') != 0 {
 		loc year 2017
 	}
 	if "`modulo'"=="01"{
-	loc modulo "01+Padron" | modulo "18+Padron"
+	loc modulo "01+Padron"
 		loc mod 01
 	}
 	else if "`modulo'"=="02" {
