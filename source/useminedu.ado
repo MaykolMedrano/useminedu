@@ -200,7 +200,7 @@ copy "http://escale.minedu.gob.pe/documents/10156/`año'/`modulo'.zip" .
 
 di in green "Descargando modulo_`modulo'_`year'"
 di in green "Descarga exitosa"
-
+id_02+Matricula_01
 sleep 2000
 qui unzipfile id_`modulo'
 erase "id_`modulo'"
@@ -226,5 +226,7 @@ foreach file of loc dbfiles {
 di in green "{text}Consulte por más datos aquí:{browse www.escale.minedu.gob.pe:ESCALE - Ministerio de Educación}"
 	
 end
+
+
 
 
