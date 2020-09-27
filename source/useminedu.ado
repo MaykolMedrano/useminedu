@@ -59,7 +59,7 @@ if length(`"`modulo'"') != 0 {
 		loc year 2017
 	}
 	if "`modulo'"=="01"{
-	loc modulo "01+Padron.zip" | modulo "18+Padron.zip"
+	loc modulo "01+Padron.zip"
 		loc mod 01
 	}
 	else if "`modulo'"=="02" {
@@ -199,7 +199,7 @@ if length(`"`modulo'"') != 0 {
 *** Remplazamos los valores de sintaxis
 ********************************************************************************
 //Usamos el comando nativo copy para descargar los datos
-copy "http://escale.minedu.gob.pe/documents/10156/`año'/`modulo'" id_`modulo'.zip
+copy "http://escale.minedu.gob.pe/documents/10156/`año'/`modulo'" id_`modulo'
 
 di in green "Descargando modulo_`modulo'_`year'"
 di in green "Descarga exitosa"
