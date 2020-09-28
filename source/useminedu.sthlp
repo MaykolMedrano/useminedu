@@ -4,7 +4,7 @@
 {title:Titulo}
 
 {p2colset 5 16 20 2}{...}
-{p2col :{cmd:useminedu} {hline 2}} Modulo para descargar datos de ESCALE (Ministerio de Educación) en Stata.{p_end}
+{p2col :{cmd:useminedu} {hline 1}} Modulo para descargar datos de ESCALE (Ministerio de Educación) en Stata.{p_end}
 {p2colreset}{...}
 
 {title:Sintaxis}
@@ -25,7 +25,7 @@
 
 	     ID modulo      	 Descripción del modulo of modulo
            {hline 80}
-			  {cmd:01}		 01+Padron
+	      {cmd:01}		 01+Padron
               {cmd:02}		 02+Matricula_01
               {cmd:03}		 03+Matricula_02
               {cmd:04}		 04+Matricula_03
@@ -82,20 +82,26 @@ Seleccione un módulo de interés y año. Ejemplos:
 
 Si desea descargar más de un módulo de un solo año de interes. Ejemplo:
 
-{pstd}{inp:foreach i in 01 02 03 04 {
+{pstd}
+{inp:foreach i in 01 02 03 04 {
 useminedu censo, modulo(`i') año(2019)
-}}{p_end}
+}}
+{p_end}
 
 Si desea descargar más de un año y un módulo de interés. Ejemplo:
-{pstd}{inp:forvalues j = 2017/2019 {
+{pstd}
+{inp:forvalues j = 2017/2019 {
 useminedu censo, modulo(01) año(`j')
-}}{p_end}
+}}
+{p_end}
 
 Si desea descargar más de un módulo y varios años. Ejemplo:
-{pstd}{inp:foreach i in 01 02 03 04 {
+{pstd}
+{inp:foreach i in 01 02 03 04 {
 forvalues j = 2017/2019 {
 useminedu censo, modulo(`i') año(`j')
-}}{p_end}
+}}
+{p_end}
 
 
 {title:Notas}
